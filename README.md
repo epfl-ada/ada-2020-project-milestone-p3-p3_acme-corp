@@ -1,5 +1,4 @@
-## Title 
-Civil wars for dummies
+# Civil wars for dummies
 
 ## Abstract
 History shows different reasons for war including religion, ethnic injustice, and economic hardship. We wonder whether these different types are visible in the data and whether clustering wars will lead to different profile definitions. There has been a huge effort in interpreting models like random forest which are considered as black box. We use rule extraction methods to derive simplified rules for when civil war happens. The paper considers  snapshot records of countries - without context. The growth and diminishment of resources and productivity of a country over the years can be a sign of upcoming troubles. We want to know how war impacts trade between countries. Is war bad for business or it is an opportunity for making profit? After studying the impact of war on trade, we study whether merchants increase/decrease their trade with countries on the verge of war.
@@ -39,24 +38,23 @@ History shows different reasons for war including religion, ethnic injustice, an
 
 ## Proposed timeline
 Week 1:
- -[ ] Data cleaning
+ - Data cleaning
    -[ ] Adding historical data
    -[ ] Merging with war dataset
    -[ ] Augmenting the dataset with stable pre-war, war, and post-war signals
    -[ ] Starting with the trade dataset
-
- -[ ] Performing the analysis tasks and getting preliminary result
+ - Performing the analysis tasks and getting preliminary result
    -[ ] Assessing properly the features’ importance using random forest
    -[ ] Dimensionality reduction from the high-dimensional space and clustering. Interpretation of those clusters.
    -[ ] Classification on the clusters
- - [ ]Analyse how trade changes with war
+ -  Analyse how trade changes with war
 Week 2:
- - [ ] Building the site
- - [ ] Writing the story
- - [ ] Adding interactive plots
+ -[ ] Building the site
+ -[ ] Writing the story
+ -[ ] Adding interactive plots
 Week 3:
- - [ ] Refining the story
- - [ ] Filling gaps in the story with more analysis
+ -[ ] Refining the story
+ -[ ] Filling gaps in the story with more analysis
 
 ## Organization within the team
  - Interpretability analysis: Maximilian
