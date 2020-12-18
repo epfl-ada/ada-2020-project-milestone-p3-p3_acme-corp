@@ -7,18 +7,25 @@ History shows different reasons for war including religion, ethnic injustice, an
 ## Research Questions
 **Time**:
  - The paper considers snapshot views of countries for each year. Does adding more information about the past of a country help to make better predictions ? 
- - The paper fixes the start of a civil war to one specific moment in time, while tension in countries is built over time. Does expanding the period when the civil war starts to multiple years improve the prediction of future civil wars?
+
+ We added variables representing the change of original variables over year to study the impact of expanding data as a time sequence, but we did not observe any significant change in the classification
 
 **Clustering wars**:
  - Do we have different types of civil wars? We guess that there are different types of civil wars based on the primary reason for war which can be economic, religious, social, or ethnical injustice, etc. Does the data suggest that there are different clusters of civil wars?
  - If we have different categories of civil wars, how does the underlying reasons of civil war onset differ between them ?
 
+Due to medical emergency Baptiste had to leave the team in the last stage of the project and despite having preliminary results in clustering they are not present in the final version.
+
 **Trade**:
  - Is war bad for business?  We study whether war has a negative impact on trade. 
  - Are merchants better than politicians in detecting civil wars? Civil wars are bad for profit. Do merchants predict civil wars and reduce their trade quantity ahead of the war? (only if war is bad for trades)
 
+The trade data is very fickle and it varies a lot between year. Separating temporal effects from effect of war will be very challenging. Moreover, we found out that that the unfairness in war results in very different situation for the two sides of war as participating in war can range from sending 1000 troops to another country to chemical bombardment of cities. 
+
 **Improve interpretability**:
  - Is it possible to obtain a set of simple observations or rules leading to a good estimate of whether a civil war will appear?
+
+ We used skope-rule to enhance the interoperability of the model. We realized that the ROC curve is not suitable for civil war which is unbalanced. Surprisingly, rules achieve a better F1 than the more complex RF in the paper.
 
 ## Proposed dataset
 - Bilateral trades: We use this dataset to detect the decline of trade in countries. [Barbieri, Katherine, Omar M. G. Keshk, and Brian Pollins. 2009. “TRADING DATA: Evaluating our Assumptions and Coding Rules.” Conflict Management and Peace Science. 26(5): 471-491.](https://correlatesofwar.org/data-sets/bilateral-trade)
@@ -41,30 +48,31 @@ History shows different reasons for war including religion, ethnic injustice, an
 
 ## Proposed timeline
 Week 1:
- - [ ] Data cleaning
-   - [ ] Adding historical data
-   - [ ] Merging with war dataset
-   - [ ] Augmenting the dataset with stable pre-war, war, and post-war signals
-   - [ ] Starting with the trade dataset
- - [ ] Performing the analysis tasks and getting preliminary result
-   - [ ] Assessing properly the features’ importance using random forest
-   - [ ] Dimensionality reduction from the high-dimensional space and clustering. Interpretation of those clusters.
-   - [ ] Classification on the clusters
- - [ ] Analyse how trade changes with war
+ - [x] Data cleaning
+   - [x] Adding historical data
+   - [x] Merging with war dataset
+   - [x] Augmenting the dataset with stable pre-war, war, and post-war signals
+   - [x] Starting with the trade dataset
+ - [-] Performing the analysis tasks and getting preliminary result
+   - [-] Assessing properly the features’ importance using random forest
+   - [-] Dimensionality reduction from the high-dimensional space and clustering. Interpretation of those clusters.
+   - [-] Classification on the clusters
+ - [x] Analyse how trade changes with war
 
 Week 2:
- - [ ] Building the site
- - [ ] Writing the story
- - [ ] Adding interactive plots
+ - [x] Building the site
+ - [x] Writing the story
+ - [x] Adding interactive plots
 
 Week 3:
- - [ ] Refining the story
- - [ ] Filling gaps in the story with more analysis
+ - [x] Refining the story
+ - [x] Filling gaps in the story with more analysis
 
 ## Organization within the team
  - Interpretability analysis: Maximilian
- - Clustering analysis: Baptiste
- - Feature importance: Baptiste
  - Trading analysis: Kasra
- - Timing analysis: Kasra and Maximilian
- - Building the site and writing the story will be a collaboration between all members.
+ - Timing and augmenting data: Kasra 
+ - ~Clustering analysis: Baptiste~
+ 
+
+Due to medical emergency Baptiste had to leave the team in the last stage of the project and despite having preliminary results in clustering they are not present in the final version.
